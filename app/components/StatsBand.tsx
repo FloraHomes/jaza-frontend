@@ -1,7 +1,7 @@
 const stats = [
   { value: "5 min", label: "Average time to own" },
   { value: "100%", label: "Verified & titled land" },
-  { value: "4+", label: "Continents served" },
+  { value: "7+", label: "Countries served" },
   { value: "0", label: "Hidden charges" },
 ];
 

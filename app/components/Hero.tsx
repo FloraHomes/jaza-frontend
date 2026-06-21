@@ -71,8 +71,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-8 text-muted">
-            Jazã & Sakeenah: A secured digital real estate asset trading and
-            management platform.
+            Jazã & Sakeenah: Easy and reliable tech access to owning landed
+            property across Africa.
           </p>
 
           {/* No-list */}

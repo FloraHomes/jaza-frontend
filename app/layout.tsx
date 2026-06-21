@@ -123,7 +123,7 @@ export default function RootLayout({
 
         <script
           src="https://widget.zorachat.ai/zora-widget/universalWidget.js"
-          data-key="zc_live_VJVAP1MVWkbfX3X1iU9Cr5LG"
+          data-key="zc_live_Q9iaJWbIlPwkehKuMMkLz78"
           data-api-base="https://api.zorachat.ai"
           defer
         ></script>

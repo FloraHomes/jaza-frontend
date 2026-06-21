@@ -235,7 +235,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
 
                 <div className="mt-6 flex flex-col gap-3">
                   <a
-                    href="#purchase"
+                    href="https://app.jaza.ng"
                     className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark"
                   >
                     Buy this property
@@ -422,6 +422,9 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <button
                 type="button"
+                onClick={() =>
+                  window.location.replace("https://jaza-frontend.vercel.app")
+                }
                 className="rounded-full bg-secondary px-8 py-3.5 text-base font-bold text-foreground transition-colors hover:bg-secondary-light"
               >
                 Start purchase — {formatPrice(property.price)}
