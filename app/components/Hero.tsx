@@ -100,7 +100,7 @@ export default function Hero() {
               href="#how-it-works"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-brdr bg-white px-7 py-3.5 text-base font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
             >
-              See How It Works
+              See How It Works 
             </a>
           </div>
 
