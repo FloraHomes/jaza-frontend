@@ -97,10 +97,10 @@ export default function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#how-it-works"
+              href="https://app.jaza.ng"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-brdr bg-white px-7 py-3.5 text-base font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
             >
-              See How It Works 
+              Get Started
             </a>
           </div>
 

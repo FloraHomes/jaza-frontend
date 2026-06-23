@@ -64,10 +64,10 @@ export default function Header() {
             Talk to an advisor
           </a>
           <Link
-            href="/properties"
+            href="https://app.jaza.ng"
             className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-dark hover:shadow-md"
           >
-            Browse Land
+            Sign in / Register
           </Link>
         </div>
 

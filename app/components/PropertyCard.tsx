@@ -75,7 +75,7 @@ export default function PropertyCard({ property }: { property: ListingProperty }
           </span>
         </div>
 
-        <div className="mt-auto flex items-end justify-between pt-5">
+        <div className="mt-auto flex items-end justify-between gap-3 pt-5">
           <div>
             {property.oldPrice ? (
               <p className="text-xs font-medium text-muted line-through">
@@ -86,14 +86,23 @@ export default function PropertyCard({ property }: { property: ListingProperty }
               {formatPrice(property.price)}
             </p>
           </div>
-          <Link
-            href={`/properties/${property.id}`}
-            className="inline-flex items-center gap-1 rounded-full bg-primary-50 px-3.5 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white"
-            aria-label={`View ${property.title}`}
-          >
-            View
-            <ArrowUpRight className="h-4 w-4" />
-          </Link>
+          <div className="flex flex-wrap items-center justify-end gap-2">
+            <Link
+              href={`/properties/${property.id}`}
+              className="inline-flex items-center gap-1 rounded-full bg-primary-50 px-3.5 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white"
+              aria-label={`View ${property.title}`}
+            >
+              View
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+            <a
+              href="https://app.jaza.ng"
+              className="inline-flex items-center rounded-full bg-primary px-3.5 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
+              aria-label={`Buy ${property.title} now`}
+            >
+              Buy Now
+            </a>
+          </div>
         </div>
       </div>
     </article>

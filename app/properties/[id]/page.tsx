@@ -420,15 +420,12 @@ export default async function PropertyDetailPage({ params }: PageProps) {
               </ol>
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <button
-                type="button"
-                onClick={() =>
-                  window.location.replace("https://jaza-frontend.vercel.app")
-                }
-                className="rounded-full bg-secondary px-8 py-3.5 text-base font-bold text-foreground transition-colors hover:bg-secondary-light"
+              <a
+                href="https://jaza-frontend.vercel.app"
+                className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-3.5 text-base font-bold text-foreground transition-colors hover:bg-secondary-light"
               >
                 Start purchase — {formatPrice(property.price)}
-              </button>
+              </a>
               <a
                 href={`tel:${siteContact.phone}`}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-8 py-3.5 text-base font-semibold transition-colors hover:bg-white/10"
