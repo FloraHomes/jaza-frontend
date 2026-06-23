@@ -8,7 +8,7 @@ import PropertyRow from "./PropertyRow";
 const tabBlurb: Record<PropertyCategory, string> = {
   ours: "Well titled, fenced and gated estate land listed directly by Jazã & Sakeenah — instant allocation, full documentation.",
   "customer-listing":
-    "Titled Land listed by verified customers on our platform — browse and purchase securely.",
+    "Titled, fenced and gated estate land listed by verified customers on our platform — browse and purchase securely.",
 };
 
 interface PropertiesCatalogProps {

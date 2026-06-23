@@ -7,9 +7,9 @@ import type { ListingProperty } from "../lib/property-types";
 import PropertyCard from "./PropertyCard";
 
 const tabBlurb: Record<PropertyCategory, string> = {
-  ours: "Verified land listed directly by Jazã & Sakeenah — instant allocation, full documentation.",
+  ours: "Titled, fenced and gated estate land directly by Jazã & Sakeenah — instant allocation, full documentation.",
   "customer-listing":
-    "Land parcels listed by verified customers on our platform — browse and purchase securely.",
+    "Titled, fenced and gated estate land listed by verified customers on our platform — browse and purchase securely.",
 };
 
 interface PropertyListingsClientProps {
