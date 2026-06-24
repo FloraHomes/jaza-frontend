@@ -45,8 +45,8 @@ export default function FAQ() {
               Clear answers for the questions buyers ask most
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted">
-              We organized the information from the Jaza FAQ into simple
-              sections so buyers can quickly understand the process, the
+              We organized the information from the Jaza FAQs into simple
+              sections so you can quickly understand the process, the
               safeguards, and what ownership looks like after purchase.
             </p>
           </Reveal>
@@ -59,7 +59,7 @@ export default function FAQ() {
               className="rounded-[2rem] border border-brdr bg-white/90 p-6 shadow-[0_18px_45px_rgba(15,29,12,0.06)] sm:p-8"
             >
               <div className="flex flex-col gap-4 border-b border-brdr pb-6 lg:flex-row lg:items-end lg:justify-between">
-                <div className="max-w-3xl">
+                <div>
                   <span className="text-xs font-bold uppercase tracking-[0.22em] text-secondary-dark">
                     {group.eyebrow}
                   </span>
@@ -80,7 +80,6 @@ export default function FAQ() {
                   <details
                     key={item.question}
                     className="faq-item rounded-[1.6rem] border border-brdr bg-surface/70 p-5"
-                    open={groupIndex === 0 && itemIndex === 0}
                   >
                     <summary className="faq-trigger flex cursor-pointer list-none items-start justify-between gap-4">
                       <div>
