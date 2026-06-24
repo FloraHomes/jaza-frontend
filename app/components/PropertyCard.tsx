@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Maximize, ShieldCheck, ArrowUpRight, User } from "lucide-react";
+import {
+  MapPin,
+  Maximize,
+  ShieldCheck,
+  ArrowUpRight,
+  User,
+} from "lucide-react";
 import { formatPrice, statusStyles } from "../lib/data";
 import {
   getPropertyCardImage,
@@ -8,7 +14,11 @@ import {
 } from "../lib/property-types";
 import PropertySoldProgress, { SoldOutBadge } from "./PropertySoldProgress";
 
-export default function PropertyCard({ property }: { property: ListingProperty }) {
+export default function PropertyCard({
+  property,
+}: {
+  property: ListingProperty;
+}) {
   const cardImage = getPropertyCardImage(property);
 
   return (
@@ -95,13 +105,15 @@ export default function PropertyCard({ property }: { property: ListingProperty }
               View
               <ArrowUpRight className="h-4 w-4" />
             </Link>
-            <a
-              href="https://app.jaza.ng"
-              className="inline-flex items-center rounded-full bg-primary px-3.5 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
-              aria-label={`Buy ${property.title} now`}
-            >
-              Buy Now
-            </a>
+            {!property?.isSoldOut && (
+              <a
+                href="https://app.jaza.ng"
+                className="inline-flex items-center rounded-full bg-primary px-3.5 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
+                aria-label={`Buy ${property.title} now`}
+              >
+                Buy Now
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -308,7 +308,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                   Documents you receive
                 </h2>
                 <p className="mt-2 text-sm text-muted">
-                  Downloaded instantly after payment — no follow-ups required.
+                  The documents that comes with this property
                 </p>
                 <ul className="mt-4 space-y-2">
                   {property.documents.map((doc) => (
@@ -421,7 +421,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://jaza-frontend.vercel.app"
+                href="https://app.jaza.ng/"
                 className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-3.5 text-base font-bold text-foreground transition-colors hover:bg-secondary-light"
               >
                 Start purchase — {formatPrice(property.price)}

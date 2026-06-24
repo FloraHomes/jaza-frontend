@@ -98,7 +98,7 @@ export default function Hero() {
             </a>
             <a
               href="https://app.jaza.ng"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brdr bg-white px-7 py-3.5 text-base font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
+              className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-3.5 text-base font-bold text-foreground transition-colors hover:bg-secondary-light"
             >
               Get Started
             </a>

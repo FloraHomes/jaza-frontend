@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { siteContact } from "../lib/data";
 import Logo from "./Logo";
@@ -49,10 +50,10 @@ const columns = [
   {
     title: "Company",
     links: [
-      { label: "How It Works", href: "#how-it-works" },
-      { label: "Why Choose Us", href: "#why-us" },
-      { label: "Reviews", href: "#reviews" },
-      { label: "Problems We Solved", href: "#problems" },
+      { label: "How It Works", href: "/#how-it-works" },
+      { label: "Why Choose Us", href: "/#why-us" },
+      { label: "Reviews", href: "/#reviews" },
+      { label: "Problems We Solved", href: "/#problems" },
     ],
   },
   {
@@ -61,7 +62,7 @@ const columns = [
       { label: "Terms of Service", href: "#" },
       { label: "Privacy Policy", href: "#" },
       { label: "Refund Policy", href: "#" },
-      { label: "FAQs", href: "#" },
+      { label: "FAQs", href: "/#faq" },
     ],
   },
 ];
@@ -113,12 +114,12 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm text-white/70 transition-colors hover:text-secondary-light"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

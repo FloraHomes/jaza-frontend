@@ -122,11 +122,11 @@ export default function Header() {
               Talk to an advisor
             </a>
             <Link
-              href="/properties"
+              href="https://app.jaza.ng"
               onClick={() => setOpen(false)}
               className="rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-white"
             >
-              Browse Land
+              Sign in / Register
             </Link>
           </div>
         </nav>

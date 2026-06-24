@@ -6,6 +6,7 @@ import Reviews from "./components/Reviews";
 import HowItWorks from "./components/HowItWorks";
 import WhyChoose from "./components/WhyChoose";
 import Problems from "./components/Problems";
+import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <HowItWorks />
         <WhyChoose />
         <Problems />
+        <FAQ />
         <CTA />
       </main>
       <Footer />
