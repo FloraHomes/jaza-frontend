@@ -121,12 +121,12 @@ export default function RootLayout({
         />
         {children}
 
-        <script
+        {/* <script
           src="https://widget.zorachat.ai/zora-widget/universalWidget.js"
           data-key="zc_live_Q9iaJWbIlPwkehKuMMkLz78"
           data-api-base="https://api.zorachat.ai"
           defer
-        ></script>
+        ></script> */}
       </body>
     </html>
   );

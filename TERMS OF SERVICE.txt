@@ -1,0 +1,200 @@
+TERMS OF SERVICE
+Effective Date: [Insert Date]
+These Terms of Service ("Terms") govern access to and use of the Jazã & Sakeenah platform, website, web application, mobile interfaces, services, products, and related offerings (collectively, the "Platform") operated by Jazã & Sakeenah Company Limited ("Company", "Jazã & Sakeenah", "we", "our", or "us").
+By accessing, browsing, registering on, or using the Platform, you acknowledge that you have read, understood, and agreed to be bound by these Terms.
+If you do not agree to these Terms, you must not use the Platform.
+1. COMPANY INFORMATION
+Jazã & Sakeenah Company Limited is a Property Development and Real Estate Investment Company with its head office located at:
+Suite 796, Block A-4, HFP Eastline Complex, Lekki, Lagos State, Nigeria.
+The Company operates a technology-driven real estate platform designed to facilitate transparent land acquisition, allocation, ownership documentation, and property management services.
+2. ELIGIBILITY
+You may use the Platform only if:
+●You are at least 18 years of age;
+●You possess legal capacity to enter binding agreements;
+●All information provided by you is accurate and complete;
+●Your use of the Platform complies with applicable laws and regulations.
+The Platform may be accessed by both Nigerian and international users. However, all transactions shall remain subject to Nigerian law.
+3. PLATFORM SERVICES
+The Platform enables users to:
+●Browse available properties;
+●View property details and locations;
+●Review applicable property information;
+●Execute agreements electronically;
+●Make secure payments;
+●Receive allocation documents;
+●Receive ownership-related documentation;
+●Monitor purchases and property records;
+●Access resale and transfer-related features.
+The Company reserves the right to modify, suspend, discontinue, add, or remove Platform features at any time.
+4. PROPERTY INFORMATION
+The Company endeavors to ensure that all property information displayed on the Platform is accurate and current.
+Property details may include:
+●Location information;
+●Estate information;
+●Plot size;
+●Title information;
+●Pricing;
+●Payment plans;
+●Development guidelines;
+●Availability status.
+Users are encouraged to independently inspect and verify properties before purchase.
+While the Company takes reasonable measures to maintain accuracy, inadvertent errors, omissions, mapping inaccuracies, typographical mistakes, or system issues may occasionally occur.
+5. DIGITAL AGREEMENTS AND ELECTRONIC SIGNATURES
+By signing any document electronically through the Platform, you agree that:
+●Electronic signatures are legally binding;
+●Digital agreements have the same legal effect as handwritten signatures;
+●Electronic records may be relied upon as evidence of your consent;
+●The Company may retain copies of signed documents electronically.
+You waive any objection solely on the basis that a document was signed electronically.
+
+6. PROPERTY PURCHASE AGREEMENTS
+For each property transaction, purchasers may be required to review and execute a separate Property Purchase Agreement containing terms specific to the selected property, including but not limited to:
+●Pricing;
+●Payment structure;
+●Title documentation;
+●Development guidelines;
+●Estate regulations;
+●Transfer requirements;
+●Default provisions; and
+●Other transaction-specific matters.
+In the event of any inconsistency, conflict, or discrepancy between these Terms and a duly executed Property Purchase Agreement relating to a specific property transaction, the Property Purchase Agreement shall prevail solely with respect to that property transaction, while these Terms shall continue to govern all other aspects of the user's access to and use of the Platform.
+
+
+7. PURCHASE PROCESS
+Property purchases may involve:
+1.Property selection;
+
+2.Review of property details;
+
+3.Review of applicable agreements and disclosures;
+
+4.Digital execution of agreements;
+
+5.Payment;
+
+6.Completion of post-purchase ownership and documentation information;
+
+7.Automatic generation and delivery of applicable transaction records and purchase documents;
+
+8.Automatic property allocation, where applicable; and
+
+9.Payment of applicable documentation fees and issuance of ownership documents, where applicable.
+
+A transaction shall only be deemed successful upon confirmed payment and successful processing by the Platform.
+8. ALLOCATION
+Allocation is issued through the Company's digital allocation system.
+Allocation records are maintained electronically and linked to unique transaction records and allocation references.
+The Company utilizes inventory monitoring systems designed to prevent allocations beyond available inventory.
+Upon successful allocation, the allocated property shall remain associated with the purchaser unless transferred through an approved ownership transfer process.
+9. PAYMENT TERMS
+All payments must be made exclusively through authorized payment channels provided on the Platform.
+Users must not make payments to:
+●Agents;
+●Representatives;
+●Staff members;
+●Third parties;
+●Individuals claiming association with the Company;
+unless specifically authorized through official Platform channels.
+The Company shall not be responsible for losses arising from payments made outside approved payment channels.
+10. INSTALLMENT PURCHASES
+Certain properties may be available through installment plans.
+Applicable payment schedules, default provisions, and completion requirements shall be stated on the relevant property page and associated agreements.
+Failure to maintain installment obligations may affect the purchaser's rights under the applicable purchase agreement.
+11. DOCUMENTATION
+Depending on transaction type and completion status, purchasers may receive:
+●Payment Receipts;
+●Purchase Agreements;
+●Allocation Letters;
+●Registered Surveys;
+●Deeds of Assignment;
+●Other supporting documentation.
+Certain documents may require processing periods, governmental procedures, regulatory approvals, surveying processes, registration procedures, or physical dispatch.
+12. PROPERTY DEVELOPMENT
+Property development remains subject to:
+●Applicable laws;
+●Regulatory approvals;
+●Building permits;
+●Estate guidelines;
+●Government requirements;
+●Environmental requirements.
+Purchasers remain solely responsible for obtaining required approvals before commencing development.
+13. RESALE AND TRANSFER OF OWNERSHIP
+Property owners may resell their properties.
+The Platform may provide resale-related tools and property listing features.
+Ownership transfers shall only become effective after completion of the Company's approved transfer process.
+The Company may assist in connecting sellers with prospective buyers but does not guarantee:
+●Immediate resale;
+●Specific resale prices;
+●Capital appreciation;
+●Buyer availability;
+●Successful transactions.
+14. NO INVESTMENT GUARANTEE
+Property values may increase, decrease, or remain unchanged.
+The Company does not guarantee:
+●Profitability;
+●Capital growth;
+●Investment returns;
+●Rental income;
+●Appreciation rates;
+●Resale timelines.
+Any projections, estimates, examples, or market commentary are informational only.
+15. USER RESPONSIBILITIES
+Users agree to:
+●Provide accurate information;
+●Maintain account security;
+●Keep login credentials confidential;
+●Comply with applicable laws;
+●Refrain from fraudulent activity;
+●Refrain from unauthorized access attempts.
+Users remain responsible for all activities occurring under their accounts.
+16. INTELLECTUAL PROPERTY
+All Platform content, including:
+●Logos;
+●Designs;
+●Text;
+●Graphics;
+●Software;
+●Databases;
+●Documentation;
+●Trademarks;
+remain the exclusive property of the Company unless otherwise stated.
+No rights are granted except those expressly provided herein.
+17. PLATFORM AVAILABILITY
+The Company does not guarantee uninterrupted availability of the Platform.
+Temporary interruptions may occur due to:
+●Maintenance;
+●Upgrades;
+●Technical issues;
+●Security incidents;
+●Telecommunications failures;
+●Force majeure events.
+18. LIMITATION OF LIABILITY
+To the maximum extent permitted by law, the Company's liability shall be limited to the amount paid by the purchaser for the specific transaction giving rise to the claim.
+The Company shall not be liable for:
+●Indirect damages;
+●Consequential damages;
+●Lost profits;
+●Business interruption;
+●Loss of opportunities;
+●Market fluctuations;
+●Third-party actions beyond the Company's control.
+Nothing in these Terms excludes liability where exclusion is prohibited by law.
+19. INDEMNIFICATION
+You agree to indemnify and hold harmless the Company, its directors, officers, employees, contractors, and affiliates from claims arising from:
+●Your breach of these Terms;
+●Your misuse of the Platform;
+●Your violation of applicable laws;
+●Disputes arising from information supplied by you.
+20. GOVERNING LAW
+These Terms shall be governed by and construed in accordance with the laws of the Federal Republic of Nigeria.
+21. DISPUTE RESOLUTION
+The parties shall first attempt to resolve disputes amicably through good-faith negotiations.
+Where resolution cannot be reached, disputes shall be submitted to the courts of competent jurisdiction within the Federal Republic of Nigeria.
+22. AMENDMENTS
+The Company may update these Terms from time to time.
+Updated versions become effective upon publication on the Platform unless otherwise stated.
+Continued use of the Platform constitutes acceptance of the revised Terms.
+23. CONTACT INFORMATION
+Jazã & Sakeenah Company Limited
+Head Office: Suite 796, Block A-4, HFP Eastline Complex, Lekki, Lagos State, Nigeria.
+For support, inquiries, or complaints, users should utilize the official contact channels published on the Platform.

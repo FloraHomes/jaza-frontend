@@ -357,6 +357,13 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                         Deed Fee - {formatPrice(property.deedFee)}
                       </li>
                     )}
+
+                    {property?.deedFee !== undefined && (
+                      <li className="flex items-center gap-2 text-sm font-medium text-foreground">
+                        <ShieldCheck className="h-4 w-4 text-primary" />
+                        Development Fee - {formatPrice(property.deedFee)}
+                      </li>
+                    )}
                   </ul>
                 </section>
               )}

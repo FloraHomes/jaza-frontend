@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { siteContact } from "../lib/data";
+import { LEGAL_DOCUMENTS } from "../lib/legal-documents";
 import Logo from "./Logo";
 
 function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -37,6 +38,14 @@ function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function YoutubeIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
+      <path d="M23.5 6.2a3 3 0 0 0-2.12-2.14C19.55 3.5 12 3.5 12 3.5s-7.55 0-9.38.46A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.12 2.14c1.83.46 9.38.46 9.38.46s7.55 0 9.38-.46a3 3 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z" />
+    </svg>
+  );
+}
+
 const columns = [
   {
     title: "Properties",
@@ -59,19 +68,41 @@ const columns = [
   {
     title: "Legal",
     links: [
-      { label: "Terms of Service", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "Refund Policy", href: "#" },
-      { label: "FAQs", href: "/#faq" },
+      ...LEGAL_DOCUMENTS.map((doc) => ({
+        label: doc.title,
+        href: `/${doc.slug}`,
+      })),
+      // { label: "FAQs", href: "/#faq" },
     ],
   },
 ];
 
 const socials = [
-  { icon: FacebookIcon, label: "Facebook", href: "#" },
-  { icon: InstagramIcon, label: "Instagram", href: "#" },
-  { icon: XIcon, label: "X (Twitter)", href: "#" },
-  { icon: LinkedinIcon, label: "LinkedIn", href: "#" },
+  {
+    icon: FacebookIcon,
+    label: "Facebook",
+    href: "https://fb.com/Myjaza.app",
+  },
+  {
+    icon: InstagramIcon,
+    label: "Instagram",
+    href: "https://instagram.com/Myjaza.app",
+  },
+  {
+    icon: XIcon,
+    label: "X (Twitter)",
+    href: "https://x.com/MyJazaApp",
+  },
+  {
+    icon: LinkedinIcon,
+    label: "LinkedIn",
+    href: "https://linkedin.com/company/myjaza-app",
+  },
+  {
+    icon: YoutubeIcon,
+    label: "YouTube",
+    href: "https://youtube.com/@myjazaapp?si=bwoBfEXijPPAMtDG",
+  },
 ];
 
 export default function Footer() {
@@ -128,14 +159,38 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-7 sm:flex-row">
-          <p className="text-xs text-white/60">
-            © {new Date().getFullYear()} Jazã &amp; Sakeenah. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center gap-3 sm:items-start">
+            <p className="text-xs text-white/60">
+              © {new Date().getFullYear()} Jazã &amp; Sakeenah. All rights reserved.
+            </p>
+            <nav
+              aria-label="Legal policies"
+              className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 sm:justify-start"
+            >
+              {LEGAL_DOCUMENTS.map((doc, index) => (
+                <span key={doc.slug} className="flex items-center gap-3">
+                  {index > 0 && (
+                    <span aria-hidden className="text-white/30">
+                      ·
+                    </span>
+                  )}
+                  <Link
+                    href={`/${doc.slug}`}
+                    className="text-xs text-white/60 transition-colors hover:text-secondary-light"
+                  >
+                    {doc.title}
+                  </Link>
+                </span>
+              ))}
+            </nav>
+          </div>
           <div className="flex items-center gap-3">
             {socials.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={social.label}
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-secondary hover:text-foreground"
               >
