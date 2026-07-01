@@ -48,6 +48,7 @@ export interface ListingProperty {
   otherFeeTitle?: string;
   surveyFee?: number;
   deedFee?: number;
+  devLevy?: number;
   /** Percentage of estate sold (Our Properties only, 0–100). */
   percentageSold?: number;
   isSoldOut?: boolean;
@@ -69,10 +70,10 @@ export function isValidPropertyImageUrl(url?: string): url is string {
   return true;
 }
 
-/** Main image on property cards: coverPhoto || photo */
+/** Main image on property cards: photo || coverPhoto */
 export function getPropertyCardImage(property: ListingProperty): string {
-  if (isValidPropertyImageUrl(property.coverPhoto)) return property.coverPhoto.trim();
   if (isValidPropertyImageUrl(property.photo)) return property.photo.trim();
+  if (isValidPropertyImageUrl(property.coverPhoto)) return property.coverPhoto.trim();
 
   return property.image || FALLBACK_CARD_IMAGE;
 }

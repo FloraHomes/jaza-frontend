@@ -5,7 +5,7 @@ export type PropertyCategory = "ours" | "customer-listing";
 export const siteContact = {
   phone: "+2347017085158",
   phoneDisplay: "+234 701 708 5158",
-  email: "app.jaza.ng@gmail.com",
+  email: "help@jaza.ng",
   address: "Suite 796 Block A-4 HFP Eastline Complex, Lekki, Lagos State.",
 } as const;
 

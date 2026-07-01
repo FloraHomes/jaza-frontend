@@ -75,16 +75,13 @@ function formatEffectiveDate(): string {
 }
 
 function isSectionHeader(line: string): boolean {
+  // Section headings use "1. TITLE" (space after the period).
+  // In-body numbered lists use "1.Item" (no space), e.g. purchase steps.
   const match = line.match(/^\d+\.\s+(.+)$/);
   if (!match) return false;
 
   const rest = match[1].trim();
-  if (rest.endsWith(";")) return false;
-
-  const words = rest.split(/\s+/);
-  const titleLikeWords = words.filter((word) => /^[A-Z0-9&''ʿ()-]/.test(word)).length;
-
-  return titleLikeWords / words.length >= 0.6 && rest.length >= 8;
+  return !rest.endsWith(";");
 }
 
 function isBulletLine(line: string): boolean {
@@ -92,7 +89,7 @@ function isBulletLine(line: string): boolean {
 }
 
 function isNumberedListItem(line: string): boolean {
-  return /^\d+\./.test(line) && !isSectionHeader(line);
+  return /^\d+\./.test(line) && !/^\d+\.\s+/.test(line);
 }
 
 function stripBullet(line: string): string {

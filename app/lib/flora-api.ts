@@ -40,6 +40,7 @@ interface ApiPropertyBase {
   otherFeeTitle?: string;
   surveyFee?: string | number;
   deedFee?: string | number;
+  devLevy?: string | number;
   updatedAt?: string;
   createdAt?: string;
   percentageProperty?: number;
@@ -242,6 +243,7 @@ export function mapOwnEarnerProperty(raw: OwnEarnerProperty): ListingProperty {
     otherFeeTitle: raw.otherFeeTitle?.trim() || undefined,
     surveyFee: parseNumber(raw.surveyFee),
     deedFee: parseNumber(raw.deedFee),
+    devLevy: parseNumber(raw.devLevy),
     plotsAvailable: raw.percentageProperty
       ? Math.round(parseNumber(raw.landSize) * (1 - raw.percentageProperty / 100))
       : undefined,
@@ -301,6 +303,7 @@ export function mapCustomerListing(raw: CustomerListingItem): ListingProperty {
     otherFeeTitle: p.otherFeeTitle?.trim() || undefined,
     surveyFee: parseNumber(p.surveyFee),
     deedFee: parseNumber(p.deedFee),
+    devLevy: parseNumber(p.devLevy),
     listedBy,
     paymentPlan: "Contact advisor for transfer details",
     instantAllocation: true,

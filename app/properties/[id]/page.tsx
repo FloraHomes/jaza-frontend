@@ -57,6 +57,9 @@ export async function generateMetadata({
   };
 }
 
+const propertyDocuments = ["Allocation Letter", "Purchase Agreement", "Payment Receipt", "Deed of Assignment", "Survey Document"]
+
+
 export default async function PropertyDetailPage({ params }: PageProps) {
   const { id } = await params;
   const property = await getListingById(id);
@@ -234,12 +237,14 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                 </dl>
 
                 <div className="mt-6 flex flex-col gap-3">
-                  <a
-                    href="https://app.jaza.ng"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark"
-                  >
-                    Buy this property
-                  </a>
+                  {!property.isSoldOut && (
+                    <a
+                      href="https://app.jaza.ng"
+                      className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark"
+                    >
+                      Buy this property
+                    </a>
+                  )}
                   <a
                     href={`tel:${siteContact.phone}`}
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-brdr bg-white px-6 py-3.5 text-base font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
@@ -311,7 +316,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                   The documents that comes with this property
                 </p>
                 <ul className="mt-4 space-y-2">
-                  {property.documents.map((doc) => (
+                  {propertyDocuments.map((doc) => (
                     <li
                       key={doc}
                       className="flex items-center gap-2 text-sm font-medium text-foreground"
@@ -325,7 +330,8 @@ export default async function PropertyDetailPage({ params }: PageProps) {
 
               {(property?.otherFee ||
                 property.surveyFee ||
-                property.deedFee) && (
+                property.deedFee ||
+                property.devLevy) && (
                 <section className="rounded-2xl border border-brdr bg-surface/50 p-6">
                   <h2 className="flex items-center gap-2 font-display text-lg font-bold text-foreground">
                     <CreditCard className="h-5 w-5 text-primary" />
@@ -358,10 +364,10 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                       </li>
                     )}
 
-                    {property?.deedFee !== undefined && (
+                    {property?.devLevy !== undefined && (
                       <li className="flex items-center gap-2 text-sm font-medium text-foreground">
                         <ShieldCheck className="h-4 w-4 text-primary" />
-                        Development Fee - {formatPrice(property.deedFee)}
+                        Development Fee - {formatPrice(property.devLevy)}/sqm purchase
                       </li>
                     )}
                   </ul>
@@ -427,12 +433,14 @@ export default async function PropertyDetailPage({ params }: PageProps) {
               </ol>
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="https://app.jaza.ng/"
-                className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-3.5 text-base font-bold text-foreground transition-colors hover:bg-secondary-light"
-              >
-                Start purchase — {formatPrice(property.price)}
-              </a>
+              {!property.isSoldOut && (
+                <a
+                  href="https://app.jaza.ng/"
+                  className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-3.5 text-base font-bold text-foreground transition-colors hover:bg-secondary-light"
+                >
+                  Start purchase — {formatPrice(property.price)}
+                </a>
+              )}
               <a
                 href={`tel:${siteContact.phone}`}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-8 py-3.5 text-base font-semibold transition-colors hover:bg-white/10"
